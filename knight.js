@@ -7,7 +7,7 @@ const EXPANSION_RATE = 2
 export function update() {
   if (onDragon(knight)) {
     expandDragon(EXPANSION_RATE)
-    knight = getRandomKnightPosition()
+    knight = getRandomKnightPosition();
   }
 }
 

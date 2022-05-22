@@ -46,3 +46,4 @@ function draw() {
 function checkDeath() {
   gameOver = outsideGrid(getDragonHead()) || dragonIntersection()
 }
+

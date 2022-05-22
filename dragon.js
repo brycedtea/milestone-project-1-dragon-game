@@ -3,6 +3,7 @@ import { getInputDirection } from "./movement.js"
 export const DRAGON_SPEED = 7
 const dragonBody = [{ x: 11, y: 11 }]
 let newSegments = 0
+var audio = new Audio("Dragon Roar.mp3");
 
 export function update() {
   addSegments()
@@ -35,6 +36,7 @@ export function onDragon(position, { ignoreHead = false } = {}) {
     if (ignoreHead && index === 0) return false
     return equalPositions(segment, position)
   })
+
 }
 
 export function getDragonHead() {
@@ -51,7 +53,8 @@ function equalPositions(pos1, pos2) {
 
 function addSegments() {
   for (let i = 0; i < newSegments; i++) {
-    dragonBody.push({ ...dragonBody[dragonBody.length - 1] })
+    dragonBody.push({ ...dragonBody[dragonBody.length - 1] });
+    audio.play();
   }
 
   newSegments = 0

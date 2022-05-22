@@ -41,3 +41,7 @@ body {
       font-size: 90px;
       margin-right: 150px;
   }
+
+  #score {
+      color: white;
+  }
