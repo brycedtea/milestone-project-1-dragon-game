@@ -2,6 +2,9 @@ import { update as updateDragon, draw as drawDragon, DRAGON_SPEED, getDragonHead
 import { update as updateKnight, draw as drawKnight } from './knight.js'
 import { outsideGrid } from './grid.js'
 
+
+alert("You are the dragon. Protect the castle from all invaders. Press the Arrow Keys to begin.");
+
 let lastRenderTime = 0
 let gameOver = false
 const gameBoard = document.getElementById('game-board')

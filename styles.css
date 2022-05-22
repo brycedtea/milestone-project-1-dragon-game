@@ -29,8 +29,15 @@ body {
   }
 
 .knight {
-    background-size: 35px;
-    background-image: url("assets/knight2.png");
+    background-size: 30px;
+    background-image: url("assets/knight.gif");
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  h1 {
+      color: white;
+      font-family: 'Brush Script MT', cursive;
+      font-size: 90px;
+      margin-right: 150px;
   }
