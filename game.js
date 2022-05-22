@@ -47,3 +47,8 @@ function checkDeath() {
   gameOver = outsideGrid(getDragonHead()) || dragonIntersection()
 }
 
+//Attempting to add score
+const node = document.createElement("score");
+const textnode = document.createTextNode("0");
+node.appendChild(textnode);
+document.getElementById("score").appendChild(node);
